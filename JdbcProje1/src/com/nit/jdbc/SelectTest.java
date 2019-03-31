@@ -17,6 +17,7 @@ public class SelectTest {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conn=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","abc");
+			System.out.println("this is select record from oracle databse");
 			 if(conn!=null)
 				 st=conn.createStatement();
 			 if(st!=null)
